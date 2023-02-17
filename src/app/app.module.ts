@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { DetalheComponent } from './components/detalhe/detalhe.component';
+import { ListagemComponent } from './components/listagem/listagem.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DetalheComponent,
+    ListagemComponent
   ],
   imports: [
     BrowserModule
