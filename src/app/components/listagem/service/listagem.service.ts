@@ -16,7 +16,7 @@ export class ListagemService {
   obterMoedas():Observable<Moeda[]> {
 
 
-    return this.requisicaoApi.get<Moeda[]>(`localhost:3000/api/cripto/obter-moeda`);
+    return this.requisicaoApi.get<Moeda[]>(`/api/cripto/obter-moedas`);
 
 
 
