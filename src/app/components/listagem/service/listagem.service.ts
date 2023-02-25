@@ -13,10 +13,12 @@ export class ListagemService {
   constructor(private requisicaoApi:HttpClient) { }  // private é para saber se o código pode ser exposto ou nao, podia ser público. Regra typescript
 
 
-  obterMoedas():Observable<Moeda[]> {
+  obterMoedas():Observable<Moeda[]> {          // aqui pegamos o nome Moeda de moeda.ts, e informamos que é varios por isso o [], isso é para saber oq vamos receber,um string,number etc
 
 
-    return this.requisicaoApi.get<Moeda[]>(`/api/cripto/obter-moedas`);
+    return this.requisicaoApi.get<Moeda[]>(`/api/cripto/obter-moedas`); // get para requisitar do back,porque usamos get no back
+
+    // aqui estou com a bala no revolver
 
 
 
