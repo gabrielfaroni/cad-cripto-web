@@ -20,6 +20,7 @@ export class ListagemService {
 
     // aqui estou com a bala no revolver
     // lembrando q sao separados service e component para organização também do passo a passo
+    // service acessa a api, back end e o component se inscreve(subscribe) e tem seu html, css, ts.
 
 
 

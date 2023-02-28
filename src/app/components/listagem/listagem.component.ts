@@ -21,6 +21,8 @@ export class ListagemComponent implements OnInit {            //oninit é que qu
                                                                       // O observable espera ela voltar e dá um sinal de sim para o subscribe, ele apenas observa e dá um sinal verde
                                                                       // aqui estou atirando a bala.
                                                                       // proxy faz o intermedio entre back e front, nao consegue ir direto sem ele.
+                                                                      // service acessa a api, back end. O component se inscreve(subscribe) e tem seu html, css, ts.
+                                                                      // moedaService : significa que é do tipo ListagemService    : = do tipo, nao que recebe
 
       this.moedasExibirNoHtml = moedasVindoDaApi
       debugger;
