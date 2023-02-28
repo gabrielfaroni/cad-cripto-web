@@ -1,32 +1,24 @@
+
+
+                                                                     <!-- double mustache , pegar valores do ts e colocar no html-->
+
+{{teste}}
+
 <table>
-
-{{id}}     <!-- double mustache , pegar valores do ts e colocar no html-->
-<thead>
-<th>Id</th>
-<th>Nome</th>
-<th>Preço Venda</th>
-<th>Ver Detalhes</th>
-
-</thead>
-
-
-<tbody>
-<td></td>
-
-
-
-
-
-</tbody>
-
-
-
-
-
-
-
-
-
+    <thead>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Preço</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of moedasExibirNoHtml">              <!-- of = receber moedasExibirNoHtml, comando do angular, assim como *ngFor -->
+            <td>{{item.id}}</td>                                    <!-- item recebe moedasExibirNoHtml que recebe moedasvindodaapi que recebe moeda[] -->
+            <td>{{item.nome}}</td>
+            <td>{{item.precoCompraVenda}}</td>
+            <td>detalhe</td>
+        </tr>
+    </tbody>
 </table>
 
 

@@ -19,6 +19,7 @@ export class ListagemService {
     return this.requisicaoApi.get<Moeda[]>(`/api/cripto/obter-moedas`); // get para requisitar do back,porque usamos get no back
 
     // aqui estou com a bala no revolver
+    // lembrando q sao separados service e component para organização também do passo a passo
 
 
 
