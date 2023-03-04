@@ -3,8 +3,8 @@
                                                                      <!-- double mustache , pegar valores do ts e colocar no html-->
 
 {{teste}}
+<table class = "table">
 
-<table>
     <thead>
         <th>Id</th>
         <th>Nome</th>
@@ -16,7 +16,7 @@
             <td>{{item.id}}</td>                                    <!-- item recebe moedasExibirNoHtml que recebe moedasvindodaapi que recebe moeda[] -->
             <td>{{item.nome}}</td>
             <td>{{item.precoCompraVenda}}</td>
-            <td>detalhe</td>
+            <td><a href="#" (click)="detalhar(item.id)">detalhe</a></td>                      <!-- o jogo da velha foi colocado para inativar o redirecionamento do link, quam vai fazer isso é o método que criarmos -->
         </tr>
     </tbody>
 </table>

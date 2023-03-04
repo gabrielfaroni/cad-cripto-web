@@ -1,23 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';          // isso é para fazer requisição post, get do back end
+import { HttpClientModule } from '@angular/common/http';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DetalheComponent } from './components/detalhe/detalhe.component';
 import { ListagemComponent } from './components/listagem/listagem.component';
+import { DetalheComponent } from './components/detalhe/detalhe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DetalheComponent,
-    ListagemComponent
+    ListagemComponent,
+    DetalheComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     HttpClientModule
-
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent]                                              
 })
 export class AppModule { }
