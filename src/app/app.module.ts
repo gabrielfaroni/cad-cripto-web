@@ -8,17 +8,9 @@ import { ListagemComponent } from './components/listagem/listagem.component';
 import { DetalheComponent } from './components/detalhe/detalhe.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ListagemComponent,
-    DetalheComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  declarations: [AppComponent, ListagemComponent, DetalheComponent],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]                                              
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

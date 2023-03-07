@@ -1,24 +1,31 @@
+<!-- double mustache , pegar valores do ts e colocar no html-->
 
+<table class="table table-info">
+  <thead>
+    <th>Id</th>
+    <th>Nome</th>
+    <th>Preço</th>
+    <th></th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of moedasExibirNoHtml">
+      <!-- of = receber moedasExibirNoHtml, comando do angular, assim como *ngFor -->
+      <td>{{ item.id }}</td>
+      <!-- item recebe moedasExibirNoHtml que recebe moedasvindodaapi que recebe moeda[] -->
+      <td>{{ item.nome }}</td>
+      <td>{{ item.precoCompraVenda }}</td>
+      <td>
+        <a href="javascript: return false;" (click)="detalhar(item.id)"
+          >detalhe</a
+        >
+      </td>
 
-                                                                     <!-- double mustache , pegar valores do ts e colocar no html-->
-
-{{teste}}
-<table class = "table">
-
-    <thead>
-        <th>Id</th>
-        <th>Nome</th>
-        <th>Preço</th>
-        <th></th>
-    </thead>
-    <tbody>
-        <tr *ngFor="let item of moedasExibirNoHtml">              <!-- of = receber moedasExibirNoHtml, comando do angular, assim como *ngFor -->
-            <td>{{item.id}}</td>                                    <!-- item recebe moedasExibirNoHtml que recebe moedasvindodaapi que recebe moeda[] -->
-            <td>{{item.nome}}</td>
-            <td>{{item.precoCompraVenda}}</td>
-            <td><a href="#" (click)="detalhar(item.id)">detalhe</a></td>                      <!-- o jogo da velha foi colocado para inativar o redirecionamento do link, quam vai fazer isso é o método que criarmos -->
-        </tr>
-    </tbody>
+      <!-- o jogo da velha foi colocado para inativar o redirecionamento do link, quam vai fazer isso é o método que criarmos -->
+      <!-- esse javascript return false é pra nao redirecionar o link, clicar e nao ir pra lugar algum -->
+    </tr>
+    <br />
+  </tbody>
 </table>
 
-
+<!-- <div><i class="bi bi-coin"></i></div>
+<div class = "row">preço</div> -->
