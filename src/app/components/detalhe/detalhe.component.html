@@ -1,3 +1,31 @@
+<div class="card">
+  <h5 class="card-header">{{ moedaDetalheHtml.nome }}</h5>
+  <div class="card-body">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-3">
+        <h5 class="card-title">
+          <i class="bi bi-currency-exchange"></i> Paridade
+        </h5>
+        <p class="card-text">{{ moedaDetalheHtml.paridade }}</p>
+      </div>
+      <div class="col-md-3">
+        <h5 class="card-title"><i class="bi bi-cart4"></i> Preço</h5>
+        <p class="card-text">{{ moedaDetalheHtml.precoCompraVenda }}</p>
+      </div>
+      <div class="col-md-3">
+        <h5 class="card-title"><i class="bi bi-cash-coin"></i> Unidade</h5>
+        <p class="card-text">
+          {{ moedaDetalheHtml.unidadeMonetariaCompraVenda }}
+        </p>
+      </div>
+      <div class="col-md-3">
+        <h5 class="card-title"><i class="bi bi-bank"></i> Corretores</h5>
+        <p class="card-text">{{ moedaDetalheHtml.corretoras }}</p>
+      </div>
+    </div>
+    <hr />
 
-
-{{moedaDetalheHtml.nome }}
+    <h5 class="card-title"><i class="bi bi-info-square-fill"></i> Descrição</h5>
+    <p class="card-text">{{ moedaDetalheHtml.descricao }}</p>
+  </div>
+</div>

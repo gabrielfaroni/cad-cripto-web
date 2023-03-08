@@ -31,13 +31,10 @@ export class ListagemComponent implements OnInit {
       // router.navigatebyurl serve para redirecionar em rotas
 
       this.moedasExibirNoHtml = moedasVindoDaApi;
-      
     });
   }
 
   detalhar(id: number) {
-    
-
     //redirecionamento p/ alguma rota da aplicação// navegas nas rotas
     this.router.navigateByUrl(`detalhar/${id}`); // aqui ele está informando de qual id ele quer pegar
     debugger;

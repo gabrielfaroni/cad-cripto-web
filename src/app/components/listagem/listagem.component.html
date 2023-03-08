@@ -1,6 +1,6 @@
 <!-- double mustache , pegar valores do ts e colocar no html-->
 
-<table class="table table-info">
+<table class="table table-danger">
   <thead>
     <th>Id</th>
     <th>Nome</th>
@@ -16,8 +16,8 @@
       <td>{{ item.precoCompraVenda }}</td>
       <td>
         <a href="javascript: return false;" (click)="detalhar(item.id)"
-          >detalhe</a
-        >
+          ><i class="bi bi-arrow-up"></i
+        ></a>
       </td>
 
       <!-- o jogo da velha foi colocado para inativar o redirecionamento do link, quam vai fazer isso é o método que criarmos -->
