@@ -14,3 +14,5 @@ import { DetalheComponent } from './components/detalhe/detalhe.component';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+// LEMBRANDO QUE A COMUNICAÇÃO DO BACK COM O FRONT É FEITA COM JSON NORMALMENTE, A PLATAFORMA FAZ A CONVERSÃO

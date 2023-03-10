@@ -17,3 +17,6 @@ export class EstagioService {
     ); //  obterMoedaPeloId()  ('/api/cripto/obter-moeda/peloid?id=4')  .obterMoedaPeloId()  assim chamamos o 4
   }
 }
+
+// LEMBRANDO QUE A COMUNICAÇÃO DO BACK COM O FRONT É FEITA COM JSON NORMALMENTE, A PLATAFORMA FAZ A CONVERSÃO
+
